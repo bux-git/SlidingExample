@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.dqr.www.slidingexample.MainActivity">
+    <Button
+        android:id="@+id/btn_start_scroll"
+        android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:text="scrollTo scrollBy移动View"
+            android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btnScroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Scroll"
+        android:textAllCaps="false"/>
+
+
+    <Button
+        android:id="@+id/btnPull"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="滑动复位"
+        android:textAllCaps="false"/>
+
+
+</LinearLayout>
