@@ -19,6 +19,7 @@
         <activity android:name=".ScrollToExampleActivity"></activity>
         <activity android:name=".ScrollExampleActivity"></activity>
         <activity android:name=".PullDownActivity"></activity>
+        <activity android:name=".CustViewPagerActivity"></activity>
     </application>
 
 </manifest>

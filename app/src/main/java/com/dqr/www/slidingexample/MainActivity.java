@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button mBtnStartScroll;
     private Button mBtnScroll;
     private Button mBtnPull;
+    private Button mBtnViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,10 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mBtnStartScroll = (Button) findViewById(btn_start_scroll);
         mBtnScroll = (Button) findViewById(R.id.btnScroll);
         mBtnPull = (Button) findViewById(R.id.btnPull);
+        mBtnViewPager = (Button) findViewById(R.id.btnViewPager);
 
         mBtnStartScroll.setOnClickListener(this);
         mBtnScroll.setOnClickListener(this);
         mBtnPull.setOnClickListener(this);
+        mBtnViewPager.setOnClickListener(this);
 
     }
 
@@ -39,6 +42,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btnPull:
                 startActivity(new Intent(MainActivity.this,PullDownActivity.class));
+                break;
+            case R.id.btnViewPager:
+                startActivity(new Intent(MainActivity.this,CustViewPagerActivity.class));
                 break;
         }
     }
